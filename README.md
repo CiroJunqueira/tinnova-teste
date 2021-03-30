@@ -1,6 +1,8 @@
-Avaliação Tinnova
+Avaliação Tinnova:
+
 
 Neste repositório encontram-se os 5 exercícios propostos, que são:
+
 
 1 - Votos em relação ao total de eleitores;
 
@@ -11,6 +13,8 @@ Neste repositório encontram-se os 5 exercícios propostos, que são:
 4 - Soma de Multiplos de 3 ou 5;
 
 5 - Api de cadastro de veículos.
+
+Na branch master, encontra-se o projeto da API dos veículos, e nas branches ex1, 2, 3 e 4 estão os respectivos exercícios como mencionado acima.
 
 Para executar os projetos, é necessário uma ide com java 11.
 
@@ -26,4 +30,4 @@ Swagger;
 H2.
 
 O projeto dos veículos também foi documentado com o Swagger:
-localhot:8080/swagger-ui.html
+http://localhost:8080/swagger-ui.html
