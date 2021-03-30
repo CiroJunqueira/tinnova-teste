@@ -61,7 +61,8 @@ public class VeiculoService {
 	}
 
 	private void verificarMarca(@Valid VeiculoTO veiculoTO) throws Exception {
-		if (!veiculoTO.getMarca().equals("Volkswagen") && !veiculoTO.getMarca().equals("Ford") && !veiculoTO.getMarca().equals("Hyundai") && !veiculoTO.getMarca().equals("Renault") && !veiculoTO.getMarca().equals("Honda") && !veiculoTO.getMarca().equals("Chevrolet")) {
+		if (!veiculoTO.getMarca().equals("Volkswagen") && !veiculoTO.getMarca().equals("Ford") && !veiculoTO.getMarca().equals("Hyundai")
+				&& !veiculoTO.getMarca().equals("Renault") && !veiculoTO.getMarca().equals("Honda") && !veiculoTO.getMarca().equals("Chevrolet") && !veiculoTO.getMarca().equals("Fiat")){
 			throw new ErroException("Marca inválida! ");
 		}
 
@@ -86,6 +87,7 @@ public class VeiculoService {
 		response.add("Renault -> " + veiculos.stream().filter(v -> v.getMarca().equals("Renault")).count() + " veículos");
 		response.add("Honda -> " + veiculos.stream().filter(v -> v.getMarca().equals("Honda")).count() + " veículos");
 		response.add("Chevrolet -> " + veiculos.stream().filter(v -> v.getMarca().equals("Chevrolet")).count() + " veículos");
+		response.add("Fiat -> " + veiculos.stream().filter(v -> v.getMarca().equals("Fiat")).count() + " veículos");
 		return response;
 	}
 
